@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dropdown 2 Layer Dinamis</title>
+    <!-- Tambahkan link ke Bootstrap JS dan Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Tambahkan link ke Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="container py-5">
+    <h1 class="mb-4">Pilih Merek dan Model Monitor 1</h1>
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label for="merek1" class="form-label">Merek Monitor</label>
+            <select id="merek1" class="form-select" aria-label="Pilih Merek Monitor 1">
+                <option value="Acer">Acer</option>
+                <option value="AGON">AGON</option>
+                <option value="AIRO">AIRO</option>
+                <option value="AOC">AOC</option>
+                <option value="Asus">Asus</option>
+                <option value="Benq">Benq</option>
+                <option value="Cooler">Cooler</option>
+                <option value="Dell">Dell</option>
+                <option value="Gigabyte">Gigabyte</option>
+                <option value="HP">HP</option>
+                <option value="Huawei">Huawei</option>
+                <option value="Ipason">Ipason</option>
+                <option value="Koorui">Koorui</option>
+                <option value="Lenovo">Lenovo</option>
+                <option value="LG">LG</option>
+                <option value="MSI">MSI</option>
+                <option value="Philips">Philips</option>
+                <option value="Redmi">Redmi</option>
+                <option value="Samsung">Samsung</option>
+                <option value="Thinkvision">Thinkvision</option>
+                <option value="Viewsonic">Viewsonic</option>
+                <option value="Xiaomi">Xiaomi</option>
+            </select>
+        </div>
+        <div class="col-md-6">
+            <label for="model1" class="form-label">Model Monitor</label>
+            <select id="model1" class="form-select" aria-label="Pilih Model Monitor 1">
+                <option value="Acer VG252QX">Acer VG252QX</option>
+                <option value="Acer K243Y bmix">Acer K243Y bmix</option>
+                <option value="Acer K243YE">Acer K243YE</option>
+                <option value="Acer RG241Y P">Acer RG241Y P</option>
+                <option value="Acer ED270U P2">Acer ED270U P2</option>
+            </select>
+        </div>
+    </div>
+    
+    <h1 class="mb-4">Pilih Merek dan Model Monitor 2</h1>
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label for="merek2" class="form-label">Merek Monitor</label>
+            <select id="merek2" class="form-select" aria-label="Pilih Merek Monitor 2">
+                <option value="Acer">Acer</option>
+                <option value="AGON">AGON</option>
+                <option value="AIRO">AIRO</option>
+                <option value="AOC">AOC</option>
+                <option value="Asus">Asus</option>
+                <option value="Benq">Benq</option>
+                <option value="Cooler">Cooler</option>
+                <option value="Dell">Dell</option>
+                <option value="Gigabyte">Gigabyte</option>
+                <option value="HP">HP</option>
+                <option value="Huawei">Huawei</option>
+                <option value="Ipason">Ipason</option>
+                <option value="Koorui">Koorui</option>
+                <option value="Lenovo">Lenovo</option>
+                <option value="LG">LG</option>
+                <option value="MSI">MSI</option>
+                <option value="Philips">Philips</option>
+                <option value="Redmi">Redmi</option>
+                <option value="Samsung">Samsung</option>
+                <option value="Thinkvision">Thinkvision</option>
+                <option value="Viewsonic">Viewsonic</option>
+                <option value="Xiaomi">Xiaomi</option>
+            </select>
+        </div>
+        <div class="col-md-6">
+            <label for="model2" class="form-label">Model Monitor</label>
+            <select id="model2" class="form-select" aria-label="Pilih Model Monitor 2">
+                <option value="Acer VG252QX">Acer VG252QX</option>
+                <option value="Acer K243Y bmix">Acer K243Y bmix</option>
+                <option value="Acer K243YE">Acer K243YE</option>
+                <option value="Acer RG241Y P">Acer RG241Y P</option>
+                <option value="Acer ED270U P2">Acer ED270U P2</option>
+            </select>
+        </div>
+    </div>
+
+    <button class="btn btn-primary orange" id="compareButton">Bandingkan</button>
+
+    <script src="index.js"></script>
+
+    <div class="container mt-4" id="tabelPerbandingan">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th class="banding1 orange">Kolom 1</th>
+                    <th class="detail orange">Detail</th>
+                    <th class="banding2 orange">Kolom 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="banding1 percent">Baris 1 Kolom 1</td>
+                    <td class="detail">gamut_rec_2020</td>
+                    <td class="banding2 percent">Baris 1 Kolom 3</td>
+                </tr>
+                <tr>
+                    <td class="banding1">Baris 2 Kolom 1</td>
+                    <td class="detail">a_putih</td>
+                    <td class="banding2">Baris 2 Kolom 3</td>
+                </tr>
+                <tr>
+                    <td class="banding1">Baris 3 Kolom 1</td>
+                    <td class="detail">a_warna_SRGB</td>
+                    <td class="banding2">Baris 3 Kolom 3</td>
+                </tr>
+                <tr>
+                    <td class="banding1">Baris 4 Kolom 1</td>
+                    <td class="detail">a_warna_P3</td>
+                    <td class="banding2">Baris 4 Kolom 3</td>
+                </tr>
+            </tbody>
+        </table>
+        <pre>Note :
+gamut_rec_2020 = Color Gamut rec 2020 (lebih besar lebih baik)
+a_putih = keakuratan warna putih (lebih kecil lebih baik)
+a_warna_SRGB = keakuratan warna SRGB (lebih kecil lebih baik)
+a_warna_P3 = keakuratan warna P3 (lebih kecil lebih baik)
+
+        </pre>
+    </div>
+
+    <footer class="fixed-bottom">
+        <div class="container text-center py-2 orange">
+            Courtesy of GTID 2023
+        </div>
+    </footer>
+    
+</body>
+</html>
